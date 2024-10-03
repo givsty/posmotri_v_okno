@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -38,15 +41,52 @@ ol {
   list-style: none;
 }
 
-.button {
-  
+.title {
+  font-size: 83px;
+  font-family: Oswald, sans-serif;
+  line-height: 59px;
+  letter-spacing: 10px;
+  word-spacing: 1px;
 }
+
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid white;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus {
+  border: 1px solid white;
+  width: 198px;
+  height: 38px;
+}
+
+.more-button {
+  margin-top: 30px;
+  width: 100%;
+  height: 34px;
+}
+
+.more-button:hover {
+  width: 100%;
+}
+
 .content {
   display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: space-around;
-  gap: 30px;
+  align-items: end;
+  gap: 30px; 
 }
 
 .result {
@@ -54,7 +94,7 @@ ol {
 }
 
 .result__video-container {
-
+  position: relative;
 }
 
 .result__video {
@@ -69,11 +109,11 @@ ol {
 }
 
 .search-form__fieldset {
-
+  border: none;
 }
 
 .search-form__fieldset-title {
-
+  font-size: 30px;
 }
 
 .search-form__label {
@@ -91,32 +131,40 @@ ol {
 .search-form__submit-button {
   width: 194px;
   height: 34px;
-  cursor: pointer;
-  background-color: transparent;
-  color: inherit;
-  border: 1px solid white;
-  font-style: 'Fira Sans Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 15px;
 }
 
 .content__details {
-  align-self: flex-end;
+  /* /* align-self: flex-end; */
   width: 100%;
-  height: 70%;
+  overflow-y: scroll;
 }
 
 .content__list {
+  height: 300px;
   overflow-y: scroll;
-  height: 49%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 ::-webkit-scrollbar {
+  --scrollbar-offset-size: 516px;
+  --scrollbar-control-size: 23.764644076700815px;
+  --scrollbar-control-container-size: 100%;
+  --scrollbar-scale: 1;
+  --scrollbar-control-offset: 0.21110235531039315;
+}
 
+.content__list {
+  margin-top: 30px;
 }
 
 .content__list-item {
-  padding-top: 30px;
+  
+}
+
+.content__accent {
+  color: #545050;
 }
 
 .content__video-card {
