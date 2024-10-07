@@ -42,7 +42,7 @@ ol {
 }
 
 .title {
-  font-size: 83px;
+  font-size: 75px;
   font-family: Oswald, sans-serif;
   line-height: 70px;
   /* letter-spacing: 10px; */
@@ -54,7 +54,6 @@ ol {
   color: inherit;
   border: 1px solid white;
   font-family: inherit;
-  font-weight: 600;
   font-size: 17px;
 }
 
@@ -97,18 +96,13 @@ ol {
 
 .result__video {
   width: 711px;
-  height: 386px;
+  height: 425px;
 }
 
 .search-form {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  font-size: 13px;
-  font-weight: regular;
-  font-family: Oswald, sans-serif;
-  font-weight: 100;
-  font-style: inherit;
 }
 
 .search-form__fieldset {
@@ -116,14 +110,36 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: inherit;
+  font-style: inherit;
 }
-
-.search-form__label {
-
+.search-form__checkbox:not(:disabled):active+label::before{
+  width: 15px;
+  height: 15px;
 }
 
 .search-form__label-text  {
+
+}
+
+.search-form__checkbox {
+  cursor: pointer;
+  border: 1px solid white;
+  width: 19px;
+  height: 19px;
+}
+
+.search-form__checkbox:checked {
+  width: 15px;
+  height: 15px;
+}
+
+.search-form__checkbox:focus {
+
+}
+
+.search-form__checkbox:hover {
 
 }
 
@@ -136,8 +152,11 @@ ol {
   border-left: none;
   border-right: none;
   font-family: inherit;
+  font-size: inherit;
 }
-
+.search-form__textfield::placeholder {
+  color: #FFFFFF;
+}
 .search-form__textfield:focus {
   border: 1px solid white;
   width: 229px;
@@ -157,6 +176,7 @@ ol {
 
 .content__details {
   /* /* align-self: flex-end; */
+  text-transform: uppercase;
   width: 100%;
   overflow-y: scroll;
 }
@@ -167,6 +187,7 @@ ol {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-top: 30px;
 }
 
 ::-webkit-scrollbar {
@@ -175,10 +196,6 @@ ol {
   --scrollbar-control-container-size: 100%;
   --scrollbar-scale: 1;
   --scrollbar-control-offset: 0.21110235531039315;
-}
-
-.content__list {
-  margin-top: 30px;
 }
 
 .content__list-item {
@@ -190,6 +207,11 @@ ol {
   opacity: 1;
   transition: background-color 0.5s ease-in-out;
 }
+
+.content__list-item:active {
+  background-color: #545050;
+}
+
 .content__accent {
   color: #545050;
 }
@@ -217,7 +239,17 @@ ol {
   background-color: #545050;
 }
 
-.visually-hidden {
+.content__video-card-title {
+  font-size: 30px;
+  font-family: Oswald, sans-serif;
+}
+
+.content__video-card-description {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* .visually-hidden {
   position: absolute;
   inline-size: 1px;
   block-size: 1px;
@@ -225,4 +257,4 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-}
+} */
