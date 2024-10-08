@@ -115,48 +115,38 @@ ol {
   font-style: inherit;
 }
 
-.search-form__label-text  {
-
-}
-
-.search-form__checkbox {
-  /* cursor: pointer;
-  border: 1px solid white;
-  width: 19px;
-  height: 19px;
-  background: transparent; */
+.search-form__label:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .search-form__pseudo-checkbox {
   cursor: pointer;
   border: 1px solid white;
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   position: relative;
 }
 
-.search-form__pseudo-checkbox::before {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: "";
   width: 15px;
   height: 15px;
   background-color: white;
   position: absolute;
+  top: 50%;
   left: 50%;
-  right: 50%;
-  background: url('');
+  transform: translate(-50%, -50%);
 }
-/* .search-form__checkbox:checked {
-  width: 15px;
-  height: 15px;
-} */
 
-.search-form__checkbox:focus {
+/* .search-form__checkbox:focus {
 
 }
 
 .search-form__checkbox:hover {
 
-}
+} */
 
 .search-form__textfield {
   background: transparent;
@@ -169,9 +159,11 @@ ol {
   font-family: inherit;
   font-size: inherit;
 }
+
 .search-form__textfield::placeholder {
   color: #FFFFFF;
 }
+
 .search-form__textfield:focus {
   border: 1px solid white;
   width: 229px;
@@ -260,7 +252,7 @@ ol {
   font-weight: 600;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   inline-size: 1px;
   block-size: 1px;
@@ -268,4 +260,4 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} */
+}
