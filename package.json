@@ -1,5 +1,18 @@
 {
   "dependencies": {
-    "prettier": "^3.3.3"
-  }
+    "prettier": "^3.3.3",
+    "stylelint": "^16.9.0"
+  },
+  "name": "posmotri_v_okno",
+  "description": "Учебный проект Посмотри в окно. Данный проект создан в учебных целях для освоения технологий верстки.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check" : "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'" 
+  },
+  "author": "",
+  "license": "ISC"
 }
