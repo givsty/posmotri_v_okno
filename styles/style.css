@@ -152,7 +152,7 @@ ol {
   width: 15px;
   height: 15px;
   background-color: white;
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
