@@ -130,10 +130,6 @@ ol {
   outline: 1px solid #fff;
 }
 
-.search-form__label:hover {
-  text-decoration: underline;
-}
-
 .search-form__pseudo-checkbox {
   border: 1px solid white;
   width: 20px;
