@@ -5,6 +5,8 @@
   justify-content: center;
   align-items: center;
   background-color: #545050;
+  /* width: auto;
+  height: auto; */
 }
 
 .error__title {
